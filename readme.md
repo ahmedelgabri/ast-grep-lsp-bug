@@ -1,4 +1,4 @@
-# ast-grep LSP bug
+# ast-grep LSP bug https://github.com/ast-grep/ast-grep/issues/1691
 
 When specifying a files array of globs inside a rule, the LSP doesn't work
 inside the editor. This is a simple project to reproduce the issue.
