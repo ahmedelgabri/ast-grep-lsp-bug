@@ -1,0 +1,25 @@
+id: no-import
+language: javascript
+message: Imports from @foo are not allowed
+severity: error
+files:
+  - 'src/**'
+rule:
+  regex: '^@foo'
+  kind: string_fragment
+  any:
+    - inside:
+        stopBy: end
+        kind: import_statement
+    - inside:
+        stopBy: end
+        kind: call_expression
+        has:
+          field: function
+          regex: '^import$'
+    - inside:
+        stopBy: end
+        kind: call_expression
+        has:
+          field: function
+          regex: '^require$'

@@ -1,0 +1,11 @@
+{
+	"name": "ast-grep-lsp-bug",
+	"version": "0.0.0",
+	"description": "",
+	"scripts": {
+		"scan": "ast-grep scan"
+	},
+	"dependencies": {
+		"@ast-grep/cli": "^0.32.2"
+	}
+}
